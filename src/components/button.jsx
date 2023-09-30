@@ -23,12 +23,7 @@ const Button = () => {
 			.catch(err => {
 				return console.log(err)
 			})
-		//setCount(count + 1)
-		await axios
-			.get('https://clickerbd.onrender.com/get-clicks')
-			.then(response => {
-				setCount(response.data)
-			})
+		setCount(count + 1)
 	}
 
 	return (
