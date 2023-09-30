@@ -1,13 +1,19 @@
 body {
 	margin: 0;
 	padding: 0;
-	position: fixed;
-	left: 0;
-	top: 0;
-	bottom: 0;
 	background-color: #1a334c;
 	background-image: url('Images/фон кликер.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
+}
+
+@media (max-width: 767px) {
+	body {
+		position: fixed;
+	}
+}
+
+@viewport {
+	user-zoom: fixed;
 }
