@@ -8,14 +8,14 @@ const Button = () => {
 	const [count, setCount] = useState(0)
 
 	useEffect(() => {
-		axios.get('/get-clicks').then(response => {
+		axios.get('https://clickerbd.onrender.com/get-clicks').then(response => {
 			setCount(response.data)
 		})
 	}, [])
 
 	const onButtonClick = () => {
 		axios
-			.post('/count-add', {
+			.post('https://clickerbd.onrender.com/count-add', {
 				clickCount: count + 1,
 			})
 			.then(console.log('Success'))
