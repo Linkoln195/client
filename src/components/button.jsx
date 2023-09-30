@@ -10,11 +10,12 @@ const Button = () => {
 	useEffect(() => {
 		axios.get('https://clickerbd.onrender.com/get-clicks').then(response => {
 			setCount(response.data)
+			console.log(response.data)
 		})
 	}, [])
 
-	const onButtonClick = () => {
-		axios
+	const onButtonClick = async () => {
+		await axios
 			.post('https://clickerbd.onrender.com/count-add', {
 				clickCount: count + 1,
 			})
@@ -22,7 +23,12 @@ const Button = () => {
 			.catch(err => {
 				return console.log(err)
 			})
-		setCount(count + 1)
+		//setCount(count + 1)
+		await axios
+			.get('https://clickerbd.onrender.com/get-clicks')
+			.then(response => {
+				setCount(response.data)
+			})
 	}
 
 	return (
