@@ -5,5 +5,5 @@ body {
 	background-image: url('Images/фон кликер.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	overflow: hidden;
+	overflow: visible;
 }
