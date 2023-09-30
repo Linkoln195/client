@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: linear-gradient(#032539 80%, #fbf3f2 20% 100%);
+	background: linear-gradient(#032539 80vh, #fbf3f2 20vh 100vh);
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
