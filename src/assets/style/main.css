@@ -1,9 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #284d71;
-	background-image: url('Images/фон кликер.png');
+	background: linear-gradient(#032539 80%, #fbf3f2 20% 100%);
 	background-repeat: no-repeat;
 	background-size: cover;
-	overflow: visible;
+	overflow: hidden;
 }

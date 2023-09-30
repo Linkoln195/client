@@ -1,7 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/b-biggest-garbage');
+
 .text {
 	font-size: 100px;
 	font-weight: bold;
-	color: #73417f;
-	text-shadow: 0px 0px 20px black;
+	font-family: 'b Biggest Garbage', sans-serif;
+	color: #fa991c;
 	margin: auto;
 }
