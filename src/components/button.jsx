@@ -11,7 +11,7 @@ const Button = () => {
 
 	const getClicksCount = async () => {
 		await axios
-			.get('https://clickerbd.onrender.com/get-click')
+			.get('https://clickerbd.onrender.com/get-clicks')
 			.then(response => {
 				setCount(response.data)
 				setState('loaded')
