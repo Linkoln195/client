@@ -25,7 +25,7 @@ const Button = () => {
 
 	const onButtonClick = async () => {
 		await axios
-			.post('https://clickerbd.onrender.com/count-add', {
+			.put('https://clickerbd.onrender.com/count-add', {
 				clickCount: count + 1,
 			})
 			.then(console.log('Success'))
